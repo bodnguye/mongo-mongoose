@@ -1,0 +1,42 @@
+body { background-color: crimson }
+#wrapper {
+
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5%;
+}
+#articles {
+  background-color: darkslategray;
+  color: goldenrod;
+  display: inline-block;
+  overflow: auto;
+  width: 60%;
+  height: 700px;
+}
+#notes {
+  float: right;
+  width: 30%;
+}
+textarea, input {
+  display: block;
+  width: 100%;
+  background-color: #FCF5C7;
+}
+input {
+  height: 36px;
+  font-size: 24px;
+}
+textarea {
+  height: 200px;
+  font-size: 18px;
+}
+.lead {
+    margin-left: 10px;
+}
+
+.jumbotron {
+    color: gold;
+    background-image: url("./image/stanlee.jpeg"); 
+    background-size: 52%;
+}

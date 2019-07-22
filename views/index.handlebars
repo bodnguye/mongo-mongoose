@@ -1,29 +1,5 @@
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Science News</a>
-    </div>
-    <ul class="nav navbar-nav navbar-right top-buttons">
-        <li><button class="btn btn-warning scrape">Scrape Articles!</button></li>
-        <li><button class="btn btn-warning saved">Saved Articles</button></li>
-    </ul>
-  </div>
-</nav>
+{{!-- <h1>List of articles below</h1> --}}
 
-<div class="articles">
-    <div class="load"></div>
-    {{#each_upto articles 8}}
-        {{#unless saved}}
-        <div class="article">
-            <img src="{{image}}" style="height:100px;">
-            <a href="{{link}}"><h2>{{title}}</h2></a>
-            <p>{{summary}}</p>
-            <button class="btn btn-primary save" data-id="{{_id}}">SAVE</button>
-            <br>
-        </div>
-        {{/unless}}
-    {{/each_upto}}
-</div>
+<div id="articles"></div>
 
-
-
+<div id="notes"></div>
