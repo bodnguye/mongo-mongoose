@@ -32,7 +32,7 @@ app.use(express.static("public"));
 // Connect to the Mongo DB
 // mongoose.connect("mongodb://localhost/mongoMongooseScraper", { useNewUrlParser: true });
 
-var MONGODB_URI = process.env.MONGODB_URI || ("mongodb://localhost/mongoMongooseScraper", {useNewUrlParser: true});
+var MONGODB_URI = process.env.MONGODB_URI || ("mongodb://user:password123@ds353457.mlab.com:53457/heroku_qs3h5gt0", {useNewUrlParser: true});
 
 mongoose.connect(MONGODB_URI);
 
